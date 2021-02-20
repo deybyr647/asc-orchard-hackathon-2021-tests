@@ -8,6 +8,10 @@ const newSingle = (single) => {
 
 const eresBadBunny = (name) => {
   // insert code
+  const str = name.toLowerCase();
+  const artistName = "Bad Bunny";
+  
+  return str == artistName.toLowerCase();
 };
 
 const areYouLil = (name) => {

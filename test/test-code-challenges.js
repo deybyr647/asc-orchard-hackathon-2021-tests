@@ -35,7 +35,7 @@ describe('Hype Machine', function() {
 });
 
 
-describe.skip('¿Are You Bad Bunny?', function() {
+describe('¿Are You Bad Bunny?', function() {
 
   it('is Bad Bunny', function() {
     assert.strictEqual(eresBadBunny('Bad Bunny'), true);
