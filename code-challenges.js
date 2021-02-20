@@ -67,6 +67,14 @@ const getInitialsOneName = (name) => {
 
 const getInitialsLongName = (name) => {
   // insert code
+  const splitName = name.split(" ");
+  let out = "";
+
+  splitName.forEach(el => {
+    out += el.charAt(0);
+  })
+
+  return out;
 };
 
 const howRepetitiveAreYou = (lyrics, word) => {
