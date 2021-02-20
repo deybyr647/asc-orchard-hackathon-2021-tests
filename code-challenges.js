@@ -33,6 +33,22 @@ const mostViews = (videoViews) => {
 
 const validateEmail = (email) => {
   // insert code
+  const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  let out = false;
+
+  let flag = false;
+  const endings = [".com", ".net", ".edu", ".org"];
+  for(let i = 0; i < endings.length; i++){
+    email.endsWith(endings[i]) ? flag = true : undefined;
+  }
+
+  if(regex.test(email)){
+    if(flag){
+      out = true;
+    }
+  }
+
+  return out;
 };
 
 const validateEmailWithMessage = (email) => {
@@ -41,6 +57,8 @@ const validateEmailWithMessage = (email) => {
 
 const getInitials = (name) => {
   // insert code
+  const splitName = name.split(' ');
+  return splitName[0][0].toUpperCase() + splitName[1][0].toUpperCase();
 };
 
 const getInitialsOneName = (name) => {
