@@ -63,6 +63,11 @@ const getInitials = (name) => {
 
 const getInitialsOneName = (name) => {
   // insert code
+  let out = "";
+  out += name.charAt(0).toUpperCase();
+  out += name.charAt(1).toUpperCase();
+
+  return out;
 };
 
 const getInitialsLongName = (name) => {
