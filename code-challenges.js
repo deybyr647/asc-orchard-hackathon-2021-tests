@@ -16,6 +16,9 @@ const eresBadBunny = (name) => {
 
 const areYouLil = (name) => {
   // insert code
+  const artist = name.toLowerCase();
+  
+  return artist.startsWith("lil ");
 };
 
 const mostViewsThreeVideos = (videoOneViews, videoTwoViews, videoThreeViews) => {
