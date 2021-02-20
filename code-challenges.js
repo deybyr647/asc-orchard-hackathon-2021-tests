@@ -23,10 +23,12 @@ const areYouLil = (name) => {
 
 const mostViewsThreeVideos = (videoOneViews, videoTwoViews, videoThreeViews) => {
   // insert code
+  return Math.max(videoOneViews, videoTwoViews, videoThreeViews);
 };
 
 const mostViews = (videoViews) => {
   // insert code
+  return Math.max(...videoViews);
 };
 
 const validateEmail = (email) => {
